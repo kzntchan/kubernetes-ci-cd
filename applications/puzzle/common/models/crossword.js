@@ -39,8 +39,8 @@ module.exports = function(Crossword) {
       etcd.delSync("puzzle");
       Crossword.findOne(function (err, crossword) {
         
-        // Part 4: Uncomment the next line to enable puzzle pod highlighting when clicking the Submit button
-        //fireHit();
+        Part 4: Uncomment the next line to enable puzzle pod highlighting when clicking the Submit button
+        fireHit();
         if (err) handleError(err.message, cb);
         for (var j = 0; j < words.length; j++) {
           var word = words[j];
